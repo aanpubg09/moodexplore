@@ -836,15 +836,14 @@
         .map((vehicleName) => `${vehicleName} ${formatRupiah(fareByVehicle[vehicleName].total)}`)
         .join('\n');
 
-      lastCopyText = `${routeText}Tarifnya ${formatRupiah(selectedFare.total)} kak untuk ${vehicle.name}${tripNoteText}, private, sudah include BBM dan tol ya.
-Untuk mobil ${vehicle.name} nyaman dan perjalanan lebih aman tanpa ada biaya tambahan tersembunyi lagi.
+      lastCopyText = `${routeText}Tarifnya ${formatRupiah(selectedFare.total)} kak untuk ${vehicle.name}${tripNoteText}, private, sudah termasuk BBM dan tol ya.
 
 Ada pilihan lain juga kak:
 ${otherVehicleLines}
 
-Mau pilih yang mana kak? 🥰
+innova & calya bisa 6-7 orang,brio maksimal 3 orang, sendiri ataupun ramean harga tetap sama 🥰
 
-*harga berdasarkan sistem kalkulator otomatis MoodExplore*`; 
+; 
 
       el('result').classList.add('show');
       el('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
